@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Mannuu 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Balloons -->
+<div class="balloons">
+  <span>🎈</span><span>🎈</span><span>🎈</span>
+  <span>🎈</span><span>🎈</span><span>🎈</span>
+</div>
+
+<!-- Password Screen -->
+<div id="lockScreen" class="card">
+  <h1>🔐 A Surprise for Mannuu 💗</h1>
+  <p>Enter the secret password</p>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkPassword()">Unlock 🎁</button>
+  <p id="error"></p>
+</div>
+
+<!-- Main Content -->
+<div id="content" class="card hidden">
+
+  <h1>🎉 Happy 17th Birthday Mannuu 🎉</h1>
+  <h2>My Sunshine 🌻 | My Safe Place 💗</h2>
+
+  <!-- Countdown -->
+  <div id="countdown"></div>
+
+  <!-- Cake Cutting -->
+  <div class="cake-section">
+    <h2>🎂 Cut the Cake 🎂</h2>
+    <img id="cake"
+         src="https://i.imgur.com/6YVbZ0Q.png"
+         alt="Cake"
+         onclick="cutCake()">
+    <p id="cakeText">Tap the cake to cut it 💗</p>
+  </div>
+
+  <!-- Photo Gallery -->
+  <div class="gallery">
+    <h2>📸 Our Memories</h2>
+    <div class="photos">
+      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/200">
+    </div>
+  </div>
+
+  <!-- Letter -->
+  <div class="letter">
+    <p>
+      My Dorami 💛, My Princess 🧡, My Choti don 😎😼, My Sherni 🦁, My Billi 🐱,  
+      My Betuuuu 💗🥹, My Mannuu betaaa 💗🫂, Meraa betaaa 🩷🫂,  
+      Mera pyaara bacchaa 💗🫂, My Angel 🧚‍♀️, My Homie 🫂,  
+      My Kiddoooo 🫂💗, My Sunflower 🌻🥹💗, Myy Sonaaaaa 🥹💗,  
+      Myy Prettiest Lil Babyyy 🫂😭, My Chotuu sa Pyaara sa Babyyy 🫂💗,  
+      My Priyesttt Sakhii 🥹🫂, Myy Sunshine 🫶🏻💗,  
+      Meraaa billu betaaa 🥹😂🫂, Meriii Jaaannnn 😭💗🫶🏻,  
+      My Sweetheart 💗🥹🫶🏻, My Kuchuuu Puchuuuu 🥹💗💗,  
+      Myy Vishnumaya 🫶🏻🙏🏻💗, My Chashni 💗🥹,  
+      My Happy & Safe Place 💗🥹
+    </p>
+
+    <p>
+      Today you turn 17, but for me you’ll always be my little baby.
+      Distance can never change how deeply I care for you.
+      I’m so proud of the beautiful soul you are becoming.
+    </p>
+
+    <p>
+      Whenever you feel low, come back to this page and remember:
+      you are loved endlessly, protected fiercely, and cherished forever.
+      I’ll always be here — no matter what.
+    </p>
+
+    <p>
+      Happy Birthday my Mannuu 💗  
+      Your forever person 🫂
+    </p>
+  </div>
+
+</div>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<script src="script.js"></script>
+</body>
+</html>
