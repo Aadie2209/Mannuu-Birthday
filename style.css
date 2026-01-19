@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  overflow-x: hidden;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  max-width: 750px;
+  margin: 80px auto;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #ff4081;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e73370;
+}
+
+#countdown {
+  font-size: 22px;
+  margin: 20px 0;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.cake-section img {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.cake-section img.cut {
+  transform: scale(0.9) rotate(-5deg);
+}
+
+.gallery {
+  margin-top: 40px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photos img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+}
+
+.letter {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 30px;
+}
+
+/* Balloons */
+.balloons span {
+  position: fixed;
+  bottom: -100px;
+  font-size: 40px;
+  animation: float 10s infinite;
+}
+
+.balloons span:nth-child(1) { left: 10%; }
+.balloons span:nth-child(2) { left: 25%; animation-delay: 2s; }
+.balloons span:nth-child(3) { left: 40%; animation-delay: 4s; }
+.balloons span:nth-child(4) { left: 55%; animation-delay: 1s; }
+.balloons span:nth-child(5) { left: 70%; animation-delay: 3s; }
+.balloons span:nth-child(6) { left: 85%; animation-delay: 5s; }
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+/* Music Button */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 22px;
+  background: #ff4081;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
